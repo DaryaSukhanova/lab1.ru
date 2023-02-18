@@ -1,0 +1,107 @@
+@import url("reset.css");
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&display=swap');
+body {
+   font-family: 'Montserrat', sans-serif;
+   font-size: 18px;
+}
+
+input {
+   all: unset;
+   border: solid 1.4px ;
+}
+
+.button{
+   /* border-radius: 5px; */
+   padding: 5px;
+}
+
+h1{
+   text-align: center;
+   font-size: 20px;
+   margin-top: 10px;
+}
+
+
+.matrix{
+   margin-top: 10px;
+   display: grid;
+   justify-content: center;
+   grid-template: 50px 50px 50px/ 60px 60px 60px;
+}
+input{
+   margin: 4px;
+   text-align: center;
+   font-size: 18px;
+   outline: none;
+   
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+   -webkit-appearance: none;
+   margin: 0;
+}
+      
+input[type=number] {
+   -moz-appearance: textfield;
+}
+
+
+.res-matrix{
+   margin: 0 5px;
+   border-left: solid 1.5px;
+   border-right: solid 1.5px;
+   margin-top: 2px;
+   display: grid;
+   justify-content: center;
+   grid-template: 1fr 1fr 1fr/ 1fr 1fr 1fr;
+   
+}
+.res-matrix div{
+   padding: 4px;
+   text-align: center;
+   display: inline-block;
+}
+
+.container{
+   display: inline-block;
+   
+}
+.output-matrix{
+   display: flex;
+}
+
+.output-matrix span{
+   align-self: center;
+}
+.content{
+   display: flex;
+   flex-direction: column;
+   margin: 0 auto;
+   height: 300px;
+   justify-content: space-around;
+   margin-left: 20px;
+}
+
+.det-formula{
+   display: flex;
+   margin-left: 70px;
+}
+
+details>summary {
+   list-style: none;
+}
+
+details>summary::-webkit-details-marker {
+   display: none;
+}
+
+summary{
+   cursor: pointer;
+   text-decoration: underline;
+   margin-bottom: 20px;
+}
+
+.transp-matrix{
+   display: flex;
+}
